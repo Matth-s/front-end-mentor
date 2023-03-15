@@ -1,0 +1,36 @@
+@import "./reset.scss";
+@import "./settings.scss";
+
+@import "./pages/home.scss";
+@import "./pages/feedback.scss";
+@import "./pages/createFeedback.scss";
+@import "./pages/account.scss";
+@import "./pages/profil.scss";
+@import "./pages/feedbackEdit.scss";
+
+@import "./components/aside.scss";
+@import "./components/loader.scss";
+@import "./components/category.scss";
+@import "./components/upvotes.scss";
+@import "./components/quantityComments.scss";
+@import "./components/params.scss";
+
+@import "./components/form/sign.scss";
+@import "./components/form/addComment.scss";
+@import "./components/form/createAndEditFeedback.scss";
+@import "./components/form/createNewFeedback.scss";
+@import "./components/form/editFeedback.scss";
+@import "./components/form/addReply.scss";
+
+@import "./components/button/buttonAddFeedback.scss";
+@import "./components/button/buttonGoBack.scss";
+@import "./components/button/buttonEditFeedback.scss";
+
+@import "./components/header/headerBoard.scss";
+@import "./components/header/headerComments.scss";
+
+@import "./components/invoice/noInvoice.scss";
+@import "./components/invoice/invoice.scss";
+
+@import "./components/comment/comment.scss";
+@import "./components/comment/subComment.scss";

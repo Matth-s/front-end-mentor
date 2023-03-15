@@ -1,0 +1,18 @@
+.createFeedback-container {
+  width: 540px;
+  height: auto;
+  row-gap: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .createFeedback-container {
+    position: relative;
+    transform: translate(0);
+    left: unset;
+    top: unset;
+    padding: 20px 0;
+    margin: auto;
+    width: 90%;
+    row-gap: 50px;
+  }
+}

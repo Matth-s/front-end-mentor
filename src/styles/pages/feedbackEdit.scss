@@ -1,0 +1,16 @@
+.feedbackEdit-container {
+  width: 540px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .feedbackEdit-container {
+    position: relative;
+    transform: translate(0);
+    left: unset;
+    top: unset;
+    padding: 60px 0;
+    margin: auto;
+    width: 90%;
+  }
+}

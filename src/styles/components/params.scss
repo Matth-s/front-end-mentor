@@ -1,0 +1,53 @@
+.params-container {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  height: auto;
+
+  ul {
+    margin-left: auto;
+    transition: transform 0.5s;
+    transform-origin: right;
+    width: max-content;
+    margin-right: 20px;
+    column-gap: 10px;
+    background-color: #fff;
+
+    li {
+      cursor: pointer;
+      width: max-content;
+      padding: 12px;
+      border: 1px solid $color-blue-purple;
+      color: $color-blue-purple;
+      border-radius: 10px;
+
+      &:hover {
+        transition: transform 0.2s;
+        transform: scale(1.1);
+        background-color: $color-blue-purple;
+        color: #fff;
+      }
+    }
+  }
+
+  .inactive {
+    pointer-events: none;
+    cursor: unset;
+    opacity: 0.5;
+  }
+
+  .div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  img {
+    width: 20px;
+  }
+}

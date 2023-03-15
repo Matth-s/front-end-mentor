@@ -1,0 +1,30 @@
+.comment-container {
+  width: 100%;
+  height: auto;
+
+  .content {
+    width: 585px;
+    margin-left: auto;
+    word-wrap: break-word;
+  }
+}
+
+.comment-container:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 820px) {
+  .comment-container {
+    .content {
+      width: 86%;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .comment-container {
+    .content {
+      width: 100%;
+    }
+  }
+}

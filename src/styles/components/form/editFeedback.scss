@@ -1,0 +1,47 @@
+.editFeedback {
+  input[type="submit"] {
+    color: $color-grey;
+  }
+  .submit-div {
+    height: min-content;
+
+    #Delete {
+      background-color: $color-red;
+    }
+
+    #Cancel {
+      background-color: $color-blue-dark;
+      margin: 0 16px 0 110px;
+    }
+
+    #Save {
+      background-color: $color-purple;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .editFeedback {
+    .submit-div {
+      justify-content: space-between;
+
+      #Cancel {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .editFeedback {
+    .submit-div {
+      justify-content: unset;
+      flex-direction: column;
+      row-gap: 20px;
+
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  }
+}
