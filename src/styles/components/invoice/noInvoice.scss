@@ -1,0 +1,34 @@
+.noInvoice-container {
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+
+  img {
+    margin-bottom: 53px;
+  }
+
+  section {
+    text-align: center;
+    width: 410px;
+    height: auto;
+
+    p {
+      margin: 16px 0 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .noInvoice-container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .noInvoice-container {
+    section {
+      width: 95%;
+    }
+  }
+}
