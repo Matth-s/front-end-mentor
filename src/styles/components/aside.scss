@@ -1,0 +1,152 @@
+.aside-container {
+  width: 255px;
+  height: max-content;
+
+  .front-end-div,
+  .filter-div {
+    width: 255px;
+  }
+
+  .front-end-div {
+    color: #fff;
+    padding: 62px 24px 0;
+    height: 137px;
+    margin-bottom: 24px;
+    background: radial-gradient(
+      128.88% 128.88% at 103.9% -10.39%,
+      #e84d70 0%,
+      #a337f6 53.09%,
+      #28a7ed 100%
+    );
+
+    section {
+      margin: auto;
+      height: auto;
+      width: max-content;
+    }
+
+    .icon-div {
+      display: none;
+    }
+  }
+
+  .filter-div {
+    display: flex;
+    height: auto;
+    background-color: #fff;
+  }
+
+  .filter-ul {
+    padding: 24px;
+    height: auto;
+    gap: 14px 8px;
+
+    li {
+      padding: 5px 16px 6px;
+      background-color: $color-grey;
+      cursor: pointer;
+      color: $color-blue-purple;
+    }
+
+    .active {
+      background-color: $color-blue-purple;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .aside-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .front-end-div {
+      margin: 0 30px 0 0;
+    }
+
+    .filter-div {
+      width: 570px;
+      height: 137px;
+    }
+
+    .filter-ul {
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 10 10px;
+    }
+
+    li {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .aside-container {
+    .front-end-div {
+      padding: 50px 0;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aside-container {
+    margin-bottom: 0;
+    overflow-x: hidden;
+
+    .front-end-div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 72px;
+      padding: 0 24px;
+      margin-right: 0;
+      text-align: left;
+      border-radius: 0;
+
+      section {
+        margin: 0 auto 0 0;
+      }
+
+      .icon-div {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .filter-div {
+      display: unset;
+      position: absolute;
+      left: 100%;
+      top: 72px;
+      z-index: 1;
+      padding: 24px;
+      width: 271px;
+      min-height: 100vh;
+      transition: transform 0.4s;
+      border-radius: 0;
+      background-color: $color-grey;
+    }
+
+    .filter-ul {
+      justify-content: left;
+      background-color: #fff;
+    }
+  }
+  .open {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .aside-container {
+    .front-end-div {
+      padding: 0 12px;
+    }
+  }
+}
