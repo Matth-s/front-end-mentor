@@ -1,9 +1,9 @@
-import { useSelector } from "react-redux";
-import Aside from "../components/Aside";
-import HeaderBoard from "../components/header/HeaderBoard";
-import Invoice from "../components/invoice/Invoice";
-import NoInvoice from "../components/invoice/NoInvoice";
-import Params from "../components/Params";
+import { useSelector } from 'react-redux';
+import Aside from '../components/Aside';
+import HeaderBoard from '../components/header/HeaderBoard';
+import Invoice from '../components/invoice/Invoice';
+import NoInvoice from '../components/invoice/NoInvoice';
+import Params from '../components/Params';
 
 const Home = () => {
   const selectorFeedback = useSelector((state) => state.feedback);
@@ -21,16 +21,18 @@ const Home = () => {
           <HeaderBoard />
           {lengthOfFeedback > 0 ? (
             feedback
-              .filter((feedback) => feedback.category.includes(filter))
+              .filter((feedback) =>
+                feedback.category.includes(filter)
+              )
               .sort((a, b) => {
                 switch (sortBy) {
-                  case "MU":
+                  case 'MU':
                     return b.upvotes.length - a.upvotes.length;
-                  case "ML":
+                  case 'ML':
                     return a.upvotes.length - b.upvotes.length;
-                  case "MC":
+                  case 'MC':
                     return b.comments.length - a.comments.length;
-                  case "LC":
+                  case 'LC':
                     return a.comments.length - b.comments.length;
                   default:
                     return 0;

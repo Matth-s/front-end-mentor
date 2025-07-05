@@ -7,7 +7,7 @@ $color-blue-grey: #647196;
 $color-red: #d73737;
 
 * {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   font-style: normal;
 }
 
@@ -21,11 +21,11 @@ $color-red: #d73737;
 }
 
 button,
-input[type="submit"] {
+input[type='submit'] {
   cursor: pointer;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
